@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac man game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="startpage">
+        <button id="PlayGame">Start Game</button>
+        <button id="closeGame">exit</button>
+    </div>
+    <div style="color: white; position: absolute; top: 10px; right: 80px; font-size: 20px;">
+        Note For Gaming : 
+        <li>key w to up</li>
+        <li>key d to right</li>
+        <li>key s to down</li>
+        <li>key a to left</li>
+
+    </div>
+    <div id="contantGame">
+        <div id="btnSide">
+            <button id="continueGame" >Back to Start Page</button>
+            <button id="Replay"  >Replay</button>
+            <button id="pouseGame" >Pouse</button>
+        </div>
+        <p>scoure: <span id="scoreEl">0</span></p>
+        <canvas class="game"></canvas>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping</title>
+</head>
+
+<style>
+    .game-container{
+        border: 3px solid #59ce8f;
+        margin: auto;
+        width: fit-content;
+        margin-top: 10px;
+    }
+    #pause,#start{
+        cursor: pointer;
+        border: 3px solid #59CE8F;
+        color: #59CE8F;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 15px;
+        margin-top: 10px;
+        font-size: 30px;
+        transition: all .2s ease;
+        display: inline-block;
+        text-align: center;
+    }
+    #pause:hover,#start:hover{
+        color: white;
+        background-color:#59ce8f ;
+    }
+</style>
+<body>
+    
+    <div class="game-container">
+        <canvas id="pong" width="600" height="400"></canvas>
+    </div>
+    <div style="position: absolute; top: 10px; font-size: 25px;">
+        Note about Game<br> - use Mouse to play.
+    </div>
+    <div style="text-align: center;">
+        <div id="start">Start</div> 
+        <div id="pause">Pause</div>
+    </div>
+    
+    <script src="./projectJavaScript.js"></script>
+</body>
+</html>

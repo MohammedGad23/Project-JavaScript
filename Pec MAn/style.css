@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    background-color: black;
+    /* padding: 20px;    */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#startpage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    z-index: 99;
+    
+}
+
+#startpage button{
+    width: 350px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    box-shadow: 0 0 50px #9ef;
+    cursor: pointer;
+}
+#continueGame ,#pouseGame,
+#btnSideRight, button{
+    width: 350px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    box-shadow: 0 0 50px #9ef;
+    cursor: pointer;
+}
+#btnSide
+    {
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        width: 30%;
+        height:100vh;
+        font-size: 30px;
+        color: white;
+        z-index: 999;
+        /* background-color: rgb(12, 12, 12); */
+        /* border-radius: 20px; */
+        /* box-shadow: 0 0 50px #9ef; */
+        /* cursor: pointer; */
+}
+#btnSide button{
+ margin-top: 100px;
+}
+
+
+#contantGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.game{
+   position: absolute;
+   top: 1%;
+   left: 30%;
+   transform: translate(20%,10%);
+   z-index: 0;
+}
+p{
+    position: absolute;
+    top:1%;
+    left: 45%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: sans-serif;
+    /* margin: 10px; */
+}

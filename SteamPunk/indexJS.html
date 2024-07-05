@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steampunk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Audio -->
+  <audio id="backgrondSound" src="source/sourceSound.mp3"></audio>
+  <!-- Canvase -->
+  <canvas id="board"></canvas> 
+  <!-- Controls -->
+  <div class="controlPauseRestart">
+    <button onclick="reStart()" >Replay</button>
+    <button onclick="pause()" >Pause</button>
+  </div>
+
+   <div id="control">
+      <div style="font-size: 20px; text-align: left; margin-left: 20px; color: white;">
+         Note : use keyboard to play <br>
+         - ArrowUp to go up <br>
+         - ArrowDown to go ArrowDown <br>
+         - s key to shoot <br>
+         - d to display enemy power <br>
+     </div>
+      <div>Are You Ready</div>
+      <button onclick="startPlay()" id="continue">Play</button><br>
+   </div>
+
+
+  <!-- characters -->
+  <img src="source/player.png" id="player" class="char">
+  <img src="source/angler1.png" id="angler1" class="char">
+  <img src="source/angler2.png" id="angler2" class="char">
+  <img src="source/lucky.png" id="lucky" class="char">
+  <img src="source/hivewhale.png" id="hivewhale" class="char">
+  <img src="source/drone.png" id="drone" class="char">
+  
+  <!-- Projectile -->
+  <img src="source/projectile.png" id="projectile" class="char">
+  <img src="source/gears.png" id="gear" class="char">
+
+  <!-- Environment -->
+
+  <img id="layer1" src="source/layer1.png" class="char">
+  <img id="layer2" src="source/layer2.png" class="char">
+  <img id="layer3" src="source/layer3.png" class="char">
+  <img id="layer4" src="source/layer4.png" class="char">
+  
+
+  <script src="script.js"></script>
+  <script src="gameClasses.js"></script>
+  <script src="backgroundClass.js"></script>
+  <script src="playerClass.js"></script>
+  <script src="enemyChar.js"></script>
+  <script src="particle.js"></script>
+
+</body>
+</html>
