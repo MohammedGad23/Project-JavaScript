@@ -35,7 +35,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         if (user.password === password) {
             // alert('Login successful!');
             // Redirect to another website
-            window.location.href = 'index.html';
+            window.location.href = 'Home.html';
         } else {
             alert('Invalid password.');
         }
