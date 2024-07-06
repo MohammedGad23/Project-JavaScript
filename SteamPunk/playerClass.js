@@ -4,7 +4,7 @@ class playerChar{ // creat Player
         this.width = 120;
         this.height = 190;
         this.x = 40;
-        this.y = 150;
+        this.y = 150; 
         this.frameX = 0; // anmate char 
         this.frameY = 0;
         this.maxFrame = 37;
@@ -14,7 +14,7 @@ class playerChar{ // creat Player
         this.imagePlayer = document.getElementById('player');
         this.isPowerUp = false; // get power to player
         this.powerUpTimer = 0;
-        this.powerUpLimit = 10000;
+        this.powerUpLimit = 10000; // power
         this.effectLuky = false;
     }
     update(deltaTime){

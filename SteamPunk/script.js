@@ -22,7 +22,7 @@ window.addEventListener('load',function(){
     canvas.width = 1500;
     canvas.height =500;
     var backgroundSound = document.getElementById('backgrondSound');
-    control.style.display = 'inline'
+    control.style.display = 'inline';
    
     
     const gamePlayer = new gamePlay(canvas.width, canvas.height);
