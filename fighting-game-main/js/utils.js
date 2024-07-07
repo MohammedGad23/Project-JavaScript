@@ -21,9 +21,9 @@ function determineWinner({ player, enemy, timerId }) {
     document.querySelector('#displayText').innerHTML = 'Player 2 Wins'
   }
 }
+let timer = 40;
+let timerId;
 
-let timer = 30;
-let timerId
 function decreaseTimer() {
   if (timer > 0) {
     timerId = setTimeout(decreaseTimer, 1000)

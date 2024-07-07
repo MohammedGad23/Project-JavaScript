@@ -1,8 +1,8 @@
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
-canvas.width = 820
-canvas.height = 480
+canvas.width = 1024
+canvas.height = 576
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 
@@ -211,9 +211,9 @@ function animate() {
   }
 
   // jumping
-  if (enemy.velocity.y < 0) {
+  if (enemy.velocity.y > 0) {
     enemy.switchSprite('jump')
-  } else if (enemy.velocity.y > 0) {
+  } else if (enemy.velocity.y < 0) {
     enemy.switchSprite('fall')
   }
 
@@ -227,7 +227,6 @@ function animate() {
     enemy.takeHit()
     player.isAttacking = false
     enemy.health -= 10;
-
     document.getElementById('enemyHealth').style.width = enemy.health + "%";
     // width: enemy.health -= 20 + '%'
   }
